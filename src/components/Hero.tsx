@@ -38,11 +38,11 @@ const Hero = () => {
         <div className={`transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
           {/* Main heading with 3D effect */}
           <h1 className="text-6xl md:text-8xl font-black mb-6 text-text-primary relative">
-            <span className="inline-block transform hover:scale-105 transition-transform duration-300 hover:text-primary animate-glow">
+            <span className="inline-block transform hover:scale-110 transition-all duration-500 hover:text-primary animate-fade-in">
               Aayush
             </span>
             <br />
-            <span className="inline-block transform hover:scale-105 transition-transform duration-300 hover:text-secondary bg-gradient-primary bg-clip-text text-transparent animate-glow" style={{ animationDelay: '0.5s' }}>
+            <span className="inline-block transform hover:scale-110 transition-all duration-500 bg-gradient-primary bg-clip-text text-transparent animate-fade-in" style={{ animationDelay: '0.3s' }}>
               Dwivedi
             </span>
           </h1>
