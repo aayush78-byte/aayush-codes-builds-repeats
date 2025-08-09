@@ -1,5 +1,8 @@
 import { Card } from './ui/card';
 import { Button } from './ui/button';
+import ticketBookingBanner from '../assets/ticket-booking-banner.png';
+import wordpressBanner from '../assets/wordpress-banner.png';
+import cottonstoreBanner from '../assets/cottonstore-banner.png';
 
 const Projects = () => {
   const projects = [
@@ -8,6 +11,7 @@ const Projects = () => {
       description: "A responsive ticket booking layout built with React, featuring modern UI components and smooth user interactions.",
       tech: ["React", "CSS", "JavaScript"],
       gradient: "from-primary to-primary-glow",
+      image: ticketBookingBanner,
       delay: "0s"
     },
     {
@@ -15,6 +19,7 @@ const Projects = () => {
       description: "A complete website solution built using WordPress with custom themes and optimized performance.",
       tech: ["WordPress", "PHP", "CSS"],
       gradient: "from-secondary to-secondary-glow",
+      image: wordpressBanner,
       delay: "0.2s"
     },
     {
@@ -22,6 +27,7 @@ const Projects = () => {
       description: "A full-featured e-commerce website for clothing retail with product management and shopping cart functionality.",
       tech: ["WordPress", "WooCommerce", "PHP"],
       gradient: "from-accent to-primary",
+      image: cottonstoreBanner,
       delay: "0.4s"
     }
   ];
@@ -57,8 +63,14 @@ const Projects = () => {
               >
                 {/* Project header */}
                 <div className="relative mb-6">
-                  <div className={`w-full h-32 bg-gradient-to-br ${project.gradient} rounded-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300`}></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-full h-32 rounded-lg overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 rounded-lg group-hover:bg-opacity-10 transition-all duration-300">
                     <div className={`w-16 h-16 bg-gradient-to-br ${project.gradient} rounded-xl opacity-80 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110 animate-glow`}></div>
                   </div>
                 </div>
