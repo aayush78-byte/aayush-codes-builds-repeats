@@ -71,7 +71,7 @@ const Projects = () => {
                     />
                   </div>
                   <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 rounded-lg group-hover:bg-opacity-10 transition-all duration-300">
-                    <div className={`w-16 h-16 bg-gradient-to-br ${project.gradient} rounded-xl opacity-80 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110 animate-glow`}></div>
+                    <div className={`w-16 h-16 bg-gradient-to-br ${project.gradient} rounded-xl opacity-80 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110`}></div>
                   </div>
                 </div>
 
